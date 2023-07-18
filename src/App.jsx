@@ -3,8 +3,8 @@ import { useState } from "react"
 import './App.css'
 import { Task } from "./components/Task";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Row } from "react-bootstrap";
+
+
 
 
 
