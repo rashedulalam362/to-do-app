@@ -1,3 +1,4 @@
+import { FaTrashAlt } from 'react-icons/fa';
 
 
 
@@ -7,19 +8,21 @@ export const Task = (props) => {
   console.log(props);
   return (
     <div
-      className="task "
-      style={{ backgroundColor: props.completed ? "green" : "white" }}
+      className=" "
+      style={{ backgroundColor: props.completed ? "green" : "black" }}
     >
       
-      <h1>{props.taskName}</h1>
-       <div>
+      <h3>{props.taskName}</h3>
+      <div className="action">
       
-       <button className='compelete-btn' onClick={() => props.completedTask(props.id)}>Complete </button>
+      
+      <button className='compelete-btn' onClick={() => props.completedTask(props.id)}>Complete  </button>
 
-       </div>
-       <div>
-       <button className="delete-btn" onClick={() => props.deleteTask(props.id)}>Delete-Button </button>
-       </div>
+    
+    
+      <button className="delete-btn" onClick={() => props.deleteTask(props.id)}><FaTrashAlt/> </button>
+     
+      </div>
            
       
     </div>
